@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>データについて - 赤西仁 Spotify分析</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .back-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← ダッシュボードに戻る</a>
+        
+        <div class="header">
+            <h1>📊 データ・分析について</h1>
+        </div>
+
+        <div class="section">
+            <h2>🎵 データソース</h2>
+            <ul>
+                <li><strong>API:</strong> Spotify Web API</li>
+                <li><strong>アーティスト:</strong> 赤西仁 (Jin Akanishi)</li>
+                <li><strong>データ収集日:</strong> 2025年06月30日</li>
+                <li><strong>分析楽曲数:</strong> 128曲</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📈 分析指標</h2>
+            <ul>
+                <li><strong>人気度スコア:</strong> Spotify独自の0-100スケール（リアルタイム更新）</li>
+                <li><strong>リリース日:</strong> Spotify上での配信開始日</li>
+                <li><strong>楽曲長:</strong> ミリ秒単位の楽曲時間</li>
+                <li><strong>マーケット数:</strong> 楽曲が利用可能な国・地域数</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⚠️ 制限事項</h2>
+            <ul>
+                <li>音響特徴（Danceability, Energy等）は API制限により取得不可</li>
+                <li>人気度スコアは相対的指標（絶対的な再生数ではない）</li>
+                <li>地域制限により一部楽曲が対象外の可能性</li>
+                <li>Spotify上で配信されていない楽曲は含まれない</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔧 技術スタック</h2>
+            <ul>
+                <li><strong>データ分析:</strong> Python (pandas, numpy)</li>
+                <li><strong>可視化:</strong> Plotly</li>
+                <li><strong>API:</strong> Spotipy (Spotify API wrapper)</li>
+                <li><strong>実行環境:</strong> Google Colaboratory</li>
+                <li><strong>ホスティング:</strong> GitHub Pages</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📊 キャリア期間分類</h2>
+            <ul>
+                <li><strong>ソロ初期 (2011-2012):</strong> KAT-TUN脱退後の初期ソロ活動</li>
+                <li><strong>確立期 (2013-2015):</strong> ソロアーティストとしての確立</li>
+                <li><strong>独立期 (2016-2018):</strong> 独立後の音楽活動</li>
+                <li><strong>成熟期 (2019-2021):</strong> アーティストとしての成熟</li>
+                <li><strong>近年 (2022-2025):</strong> 最新の音楽活動</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+    
